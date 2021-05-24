@@ -147,6 +147,7 @@ header {
     text-align: center;
     border-radius: 5px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.562);
+    z-index: 996;
 }
 
 .grid-box img{
@@ -526,6 +527,97 @@ header {
     color: gray;
     padding: 30px;
     font-weight: 400;
+}
+
+/* scroll to top */
+#scrolltp{
+    color: white;
+    background: tomato;
+    padding: 15px;
+    border-radius: 50%;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    cursor: pointer;
+    transition: opacity 0.5s;
+}
+
+/* theme toggle */
+.theme{
+    position: absolute;
+    top: 30px;
+    left: 30%;
+}
+
+.label{
+    width: 50px;
+    height: 20px;
+    background: rgb(219, 218, 218);
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.label .ball{
+    width: 15px;
+    height: 15px;
+    background: #282f59;
+    border-radius: 50%;
+    margin: 5px;
+    transition: transform 0.5s;
+}
+
+.checkbox{
+    opacity: 0;
+    position: absolute;
+}
+
+.checkbox:checked ~ .label{
+    background: #282f59;
+}
+
+.checkbox:checked ~ .label .ball{
+    background-color: whitesmoke;
+    transform: translateX(25px);
+}
+
+/* Dark mode colors */
+body.dark{
+    background: #282f59;
+}
+
+body.dark p{
+    color: #cbcdda;
+}
+
+body.dark h1{
+    color: whitesmoke;
+}
+
+body.dark .team h1{
+    color: #282f59;
+}
+
+body.dark .footer h4{
+    color: #cbcdda;
+}
+
+body.dark .copyright{
+    color: #cbcdda;
+}
+
+body.dark .circle{
+    opacity: 0.5;
+    z-index: -888;
+}
+
+body.dark a{
+    color: whitesmoke;
+}
+
+body.dark .team .team-h1{
+    color: whitesmoke;
 }
 
 

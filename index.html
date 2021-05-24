@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- css -->
     <link rel="stylesheet" href="./style.css">
     <title>Fuck</title>
@@ -13,6 +15,12 @@
 <body>
     <header>
         <nav class="navbar">
+            <div class="theme">
+                <input type="checkbox" id="checkbox" class="checkbox">
+                <label class="label" for="checkbox">
+                    <div class="ball"></div>
+                </label>
+            </div>
             <img src="./images/logo.png" alt="" class="logo">
             <ul class="nav-list">
                 <li><a href="#">Home</a></li>
@@ -38,7 +46,7 @@
     </header>
 
     <!-- services -->
-    <section class="services">
+    <section class="services" data-aos="fade-right">
         <div class="container">
             <div class="grid-wrapper">
                 <div class="grid-box mobileapp">
@@ -71,7 +79,7 @@
     </section>
 
     <!-- Numbers -->
-    <section class="numbers">
+    <section class="numbers" data-aos="fade-left">
         <h1 class="num-text">We lead from front</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis natus illo nesciunt esse quas repellendus facere magnam possimus, perspiciatis ad dignissimos omnis vel alias voluptates doloremque impedit animi ea eum!</p>
 
@@ -101,7 +109,7 @@
     </section>
 
     <!-- Projects -->
-    <section class="projects">
+    <section class="projects" data-aos="zoom-in">
         <h1>Our latest projects</h1>
         <div class="projects-images">
             <div class="prj-img">
@@ -159,7 +167,7 @@
     <section class="team">
         <h1 class="team-h1">Meet our team</h1>
         <div class="grid-wrapper">
-            <div class="team-mem">
+            <div class="team-mem" data-aos="zoom-in">
                 <img src="./images/team1.png" alt="">
                 <h1>Jhon Wick</h1>
                 <h2>CEO & Founder</h2>
@@ -170,7 +178,7 @@
                     <i class="fa fa-linkedin"></i>
                 </div>
             </div>
-            <div class="team-mem">
+            <div class="team-mem" data-aos="zoom-in">
                 <img src="./images/team2.png" alt="">
                 <h1>Sophia</h1>
                 <h2>Manager</h2>
@@ -181,7 +189,7 @@
                     <i class="fa fa-linkedin"></i>
                 </div>
             </div>
-            <div class="team-mem">
+            <div class="team-mem" data-aos="zoom-in">
                 <img src="./images/team3.png" alt="">
                 <h1>Micheal</h1>
                 <h2>Design expert</h2>
@@ -192,7 +200,7 @@
                     <i class="fa fa-linkedin"></i>
                 </div>
             </div>
-            <div class="team-mem">
+            <div class="team-mem" data-aos="zoom-in">
                 <img src="./images/team1.png" alt="">
                 <h1>Robert</h1>
                 <h2>Product Designer</h2>
@@ -207,7 +215,7 @@
     </section>
 
     <!-- Testimonials -->
-    <section class="testimonials">
+    <section class="testimonials" data-aos="fade-right">
         <h1 class="testimonials-h1">What our clients says</h1>
         <p class="testimonials-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aliquam aut magnam sunt odit reiciendis.</p>
         <div class="grid-wrapper">
@@ -239,7 +247,7 @@
     </section>
 
     <!-- Blog -->
-    <section class="blogs">
+    <section class="blogs" data-aos="fade-left">
         <h1 class="blog-h1">Our latests blogs</h1>
         <div class="grid-wrapper">
             <div class="blog">
@@ -319,7 +327,24 @@
             <h4>Terms & Use</h4>
             <h4>Privacy Policy</h4>
         </div>
+
+        <!-- Scroll to top btn -->
+        <i id="scrolltp" class="fa fa-arrow-up"></i>
+
     </section>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 200,
+        delay: 100,
+        duration: 1000,
+      });
+    </script>
+
+    <!-- App.js -->
+    <script src="./app.js"></script>
     
 </body>
 </html>
