@@ -421,6 +421,113 @@ header {
     padding-left: 80px;
 }
 
+/* Blogs */
+.blogs{
+    margin-top: 80px;
+}
+
+.blog{
+    min-height: 400px;
+}
+
+.blogs .grid-wrapper{
+    padding: 4rem;
+}
+
+.blog h1{
+    margin: 20px 0;
+    font-size: 20px;
+}
+
+.blog a{
+    color: #282f59;
+}
+
+.blog img{
+    width: 100%;
+    max-height: 200px;
+}
+
+.blog-h1{
+    font-size: 40px;
+    text-align: center;
+}
+
+/* call to action */
+.getstarted{
+    margin-top: 80px;
+    padding: 10rem;
+}
+
+.ctn-container{
+    display: flex;
+    width: 80%;
+    padding: 2rem;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.116);
+    margin: 10px auto;
+    justify-content: space-around;
+    border-radius: 10px;
+}
+
+.ctn-btn{
+    padding: 20px 50px;
+    color: white;
+    background: var(--gradient-2);
+    border: none;
+    font-size: 20px;
+    border-radius: 2px;
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 255, 0.171);
+    cursor: pointer;
+    outline: none;
+}
+
+.ctn-btn:hover{
+    background: var(--gradient-4);
+}
+
+/* footer */
+.footer{
+    margin-top: 80px;
+    background-image: url('./images/footer-agency.png');
+    background-size: cover;
+}
+
+.col-4{
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.footer1 h1{
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.footer1 i {
+    margin: 50px 20px;
+    font-size: 25px;
+    color: gray;
+}
+
+.footer2 h4, .footer3 h4, .footer4 h4{
+    color: gray;
+    font-weight: 400;
+}
+
+.footer hr{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.copyright{
+    display: flex;
+    justify-content: space-around;
+    color: gray;
+    padding: 30px;
+    font-weight: 400;
+}
+
 
 /* Animations */
 @keyframes scaleup{
